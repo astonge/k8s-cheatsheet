@@ -14,7 +14,7 @@ Cluster -> Nodes -> Pods -> {Apps,Volumes}
 ```kubectl get all```
 
 ## Get pods
-```kubectl get pods``
+```kubectl get pods```
 
 ## Get pod name
 ```export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')```
